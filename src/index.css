@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-aqua-light: #E0FFFF;
+  --color-aqua: #00E5FF;
+  --color-aqua-dark: #008B8B;
+  --color-aqua-deep: #004242;
+  --color-luxury-black: #050505;
+  --color-luxury-gray: #0A0A0A;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-white selection:bg-aqua/30 selection:text-aqua-light;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3 {
+    @apply tracking-tight;
+  }
+}
+
+.glass {
+  @apply bg-white/[0.015] backdrop-blur-3xl border border-white/[0.04] shadow-[0_8px_32px_0_rgba(0,0,0,0.4)];
+}
+
+.glass-hover {
+  @apply hover:bg-white/[0.03] hover:border-white/[0.08] hover:shadow-[0_8px_32px_0_rgba(0,229,255,0.08)] transition-all duration-700 ease-out;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50;
+}
+
+.text-gradient-aqua {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-aqua-light via-aqua to-aqua-dark;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(110deg, #8a8d91 0%, #e6e8eb 25%, #ffffff 50%, #e6e8eb 75%, #8a8d91 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at 50% -20%, var(--color-aqua-deep) 0%, var(--color-luxury-black) 60%);
+}
+
+.bg-noise {
+  position: fixed;
+  top: -50%; left: -50%; right: -50%; bottom: -50%;
+  width: 200%; height: 200vh;
+  background: transparent url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: 0.03;
+  visibility: visible;
+  z-index: 9999;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,15%) }
+    80% { transform: translate(3%,35%) }
+    90% { transform: translate(-10%,10%) }
+}
