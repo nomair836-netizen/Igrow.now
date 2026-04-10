@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useTransform, useMotionValueEvent } from 'motion/react';
-import { Sparkles, Instagram, Twitter, Linkedin, Github, Mail, X, Menu } from 'lucide-react';
+import { Sparkles, Instagram, Twitter, Linkedin, Github, Mail, X, Menu, Youtube } from 'lucide-react';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
 import TheCollection from './pages/TheCollection';
@@ -296,13 +296,17 @@ function AppContent() {
               <input type="text" name="Name" placeholder="Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
               <input type="text" name="Brand Name" placeholder="Brand Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
             </div>
-            <input type="url" name="Website" placeholder="Website URL" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
+            <input type="email" name="Email" placeholder="Email Address" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
             <textarea name="Vision" placeholder="Tell us about your vision." required rows={4} className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30 resize-none"></textarea>
             
-            <div className="text-center pt-8">
-              <button type="submit" className="px-12 py-5 bg-white text-black font-medium tracking-[0.2em] uppercase text-sm hover:bg-[#E5E4E2] transition-colors duration-700 w-full md:w-auto">
+            <div className="text-center pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
+              <button type="submit" className="px-12 py-5 bg-white text-black font-medium tracking-[0.2em] uppercase text-sm hover:bg-[#E5E4E2] transition-colors duration-700 w-full sm:w-auto">
                 Initiate Project
               </button>
+              <span className="text-white/30 font-light text-sm italic">or</span>
+              <a href="mailto:contact@igrow.now" className="px-12 py-5 border border-white/20 text-white font-medium tracking-[0.2em] uppercase text-sm hover:bg-white/5 transition-colors duration-700 w-full sm:w-auto">
+                Direct Email
+              </a>
             </div>
           </form>
           
@@ -312,7 +316,20 @@ function AppContent() {
               <span>&copy; 2026 I Grow.</span>
               <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
             </div>
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-6">
+              <a href="https://www.instagram.com/Igroooow" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                <Instagram className="w-4 h-4" />
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a href="https://www.tiktok.com/@igrowai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                <span className="sr-only">TikTok</span>
+              </a>
+              <a href="https://www.youtube.com/channel/UCT1d2dxF_RNNvwd59XYPPpw" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                <Youtube className="w-4 h-4" />
+                <span className="sr-only">YouTube</span>
+              </a>
+              <div className="w-px h-4 bg-white/20 mx-2"></div>
               <a href="mailto:contact@igrow.now" className="hover:text-white transition-colors duration-300">contact@igrow.now</a>
             </div>
           </div>
