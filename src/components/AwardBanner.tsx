@@ -115,7 +115,7 @@ export default function AwardBanner() {
           <AwardIcon />
           <span>Limitless Creativity</span>
           <LaurelIcon />
-          <span>Hyper-Realistic</span>
+          <span>Hyper Realistic</span>
         </span>
       </ParallaxText>
 
@@ -132,7 +132,7 @@ export default function AwardBanner() {
           <StarIcon />
           <span>Pixel Perfect</span>
           <SparkleIcon />
-          <span>Next-Gen Studio</span>
+          <span>Next Gen Studio</span>
         </span>
       </ParallaxText>
     </section>

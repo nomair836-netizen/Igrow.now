@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import FAQ from './pages/FAQ';
 import TheCollection from './pages/TheCollection';
 import MessageToTheWorld from './pages/MessageToTheWorld';
+import InvisibleWrap from './pages/InvisibleWrap';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -267,6 +268,7 @@ function AppContent() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/collection" element={<TheCollection />} />
         <Route path="/message" element={<MessageToTheWorld />} />
+        <Route path="/invisible-wrap" element={<InvisibleWrap />} />
       </Routes>
 
       {/* Footer & Contact Section */}
@@ -305,8 +307,7 @@ function AppContent() {
               <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
             </div>
             <div className="flex items-center gap-8">
-              <a href="mailto:hello@igrow.agency" className="hover:text-white transition-colors duration-300">hello@igrow.agency</a>
-              <span>London, UK</span>
+              <a href="mailto:contact@igrow.now" className="hover:text-white transition-colors duration-300">contact@igrow.now</a>
             </div>
           </div>
         </div>
@@ -342,11 +343,11 @@ function AppContent() {
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">1. Information We Collect</h4>
                 <p>We only collect information necessary to evaluate and execute your project, including your name, brand name, website URL, and project vision submitted via our contact form.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">2. 100% Discretion Guarantee</h4>
-                <p>We operate as a white-label, silent partner. We will never disclose our partnership, your use of AI, or share your project assets without explicit written consent. Your brand's prestige and exclusivity are our top priorities.</p>
+                <p>We operate as a white label, silent partner. We will never disclose our partnership, your use of AI, or share your project assets without explicit written consent. Your brand's prestige and exclusivity are our top priorities.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">3. Analytics & Tracking</h4>
-                <p>We use industry-standard analytics tools (such as Google Analytics and Hotjar) to understand how visitors interact with our website. This data is anonymized and used strictly to improve our user experience.</p>
+                <p>We use industry standard analytics tools (such as Google Analytics and Hotjar) to understand how visitors interact with our website. This data is anonymized and used strictly to improve our user experience.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">4. Contact Us</h4>
-                <p>For any privacy-related inquiries or to request the deletion of your data, please contact our Data Protection Officer at <a href="mailto:hello@igrow.agency" className="text-white underline">hello@igrow.agency</a>.</p>
+                <p>For any privacy related inquiries or to request the deletion of your data, please contact our Data Protection Officer at <a href="mailto:contact@igrow.now" className="text-white underline">contact@igrow.now</a>.</p>
               </div>
             </motion.div>
           </motion.div>

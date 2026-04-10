@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MiniTitle } from '../components/Shared';
 import AwardBanner from '../components/AwardBanner';
 import ComparisonTable from '../components/ComparisonTable';
+import InteractiveMessage from '../components/InteractiveMessage';
 
 export default function Home() {
   return (
@@ -57,7 +58,7 @@ export default function Home() {
                   The gap between <span className="italic text-white">Imagination</span> and <span className="italic text-white">Reality</span> is finally closed.
                 </p>
                 <p className="text-lg text-white/50 font-light leading-relaxed">
-                  I Grow treats AI as a world-changing technology—like fire, the steam engine, or electricity—that will make our lives completely different than they were before. We have tested these tools, delivered amazing ideas, and built entire worlds from a single spark. Changing the way we treat commercials forever, we master our tools and train our special models to deliver 101% perfection. The future is here, and it’s cinematic. Follow us!
+                  I Grow treats AI as a world changing technology—like fire, the steam engine, or electricity—that will make our lives completely different than they were before. We have tested these tools, delivered amazing ideas, and built entire worlds from a single spark. Changing the way we treat commercials forever, we master our tools and train our special models to deliver 101% perfection. The future is here, and it’s cinematic. Follow us!
                 </p>
                 <p className="text-sm text-[var(--color-aqua-dark)] font-mono">
                   *By 101%, we mean 100% for real-life results and 1% for the borders AI breaks.
@@ -92,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Section 2: The Story Behind I Grow */}
-      <section id="story" className="py-40 relative bg-[var(--color-luxury-gray)] overflow-hidden">
+      <section id="story" className="py-40 relative z-20 bg-[var(--color-luxury-gray)] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.8)]">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[var(--color-luxury-black)] to-transparent pointer-events-none" />
         <motion.div 
@@ -194,7 +195,16 @@ export default function Home() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="text-5xl md:text-7xl font-sans font-light tracking-tighter mb-12 leading-[1.1]"
               >
-                The <span className="font-serif italic text-white/80">Story</span> <br/> Behind I Grow
+                The <span className="relative inline-block font-serif italic text-white z-10 px-1">
+                  Story
+                  <motion.span 
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+                    className="absolute bottom-[15%] left-0 w-full h-[35%] bg-[var(--color-aqua)]/60 -z-10 origin-left -rotate-1 rounded-sm"
+                  />
+                </span> <br/> Behind I Grow
               </motion.h2>
 
               <motion.div 
@@ -226,14 +236,24 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
+
+              <InteractiveMessage />
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 3: Our Secret Weapons */}
-      <section className="py-40 relative">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-40 relative z-10 overflow-hidden">
+        {/* Full-width Background Image (Parallax) */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url('https://i.ibb.co/KjJc01YB/freepik-inspired-by-this-positon-and-camera-angel-img1-i-want-a-super-realistic-portrait-out-door-is.png')` }}
+        />
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-[var(--color-luxury-black)]/80" />
+
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
           
           {/* Centered Header */}
           <div className="text-center max-w-3xl mx-auto mb-24">
@@ -260,8 +280,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col gap-6"
             >
-              <span className="text-6xl md:text-8xl font-serif italic text-white/5">01</span>
-              <p className="text-2xl md:text-3xl text-white/60 font-light leading-relaxed">
+              <span className="text-6xl md:text-8xl font-serif italic text-white/10">01</span>
+              <p className="text-2xl md:text-3xl text-white/80 font-light leading-relaxed">
                 We at I Grow are not AI <span className="font-serif italic text-white">"learners"</span>; we went to <span className="text-white">film school</span>, <span className="text-white">business school</span>, and have delivered hundreds of successful projects.
               </p>
             </motion.div>
@@ -274,9 +294,9 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col gap-6"
             >
-              <span className="text-6xl md:text-8xl font-serif italic text-white/5">02</span>
-              <p className="text-2xl md:text-3xl text-white/60 font-light leading-relaxed">
-                We don't use basic user-friendly tools. Since 2024, we've been developing and training our <span className="font-serif italic text-white">one-of-a-kind models</span> and tools, maximizing results and details.
+              <span className="text-6xl md:text-8xl font-serif italic text-white/10">02</span>
+              <p className="text-2xl md:text-3xl text-white/80 font-light leading-relaxed">
+                We don't use basic user friendly tools. Since 2024, we've been developing and training our <span className="font-serif italic text-white">one of a kind models</span> and tools, maximizing results and details.
               </p>
             </motion.div>
 
@@ -285,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Section 4: What We Do */}
-      <section className="py-40 relative bg-[var(--color-luxury-gray)]">
+      <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">
           <MiniTitle>For Our Partners</MiniTitle>
           <motion.h2 
@@ -306,7 +326,7 @@ export default function Home() {
           >
             <p>We exclusively serve established luxury brands worldwide, focusing on the UK and European markets in fields like:</p>
             <ul className="space-y-4 pl-4">
-              {['Fine Perfumes & Swiss Watches', '5-Star Hotels', 'New Automobile Launches', 'Premium Real Estate'].map((item, i) => (
+              {['Fine Perfumes & Swiss Watches', '5 Star Hotels', 'New Automobile Launches', 'Premium Real Estate'].map((item, i) => (
                 <li key={i} className="flex items-center gap-4">
                   <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-aqua)]" />
                   <span className="text-white/80">{item}</span>
@@ -322,8 +342,16 @@ export default function Home() {
       </section>
 
       {/* Section 5: Professional Workflow + Privacy */}
-      <section className="py-40 relative">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-40 relative z-10 overflow-hidden">
+        {/* Full-width Background Image (Parallax) */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop')` }}
+        />
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-[var(--color-luxury-black)]/85" />
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
           <MiniTitle>For Our Partners</MiniTitle>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -339,20 +367,20 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-2xl text-white/50 font-light leading-relaxed space-y-6"
+            className="text-lg md:text-2xl text-white/70 font-light leading-relaxed space-y-6"
           >
             <p>
               As we only work with clients who meet our standards, and because AI is an emerging technology that some aren't familiar with, we provide full privacy. You never have to disclose that it's AI.
             </p>
             <p>
-              This applies to hyper-stylized visuals, such as futuristic cities, real estate, high-end 3D products, and animated videos.
+              This applies to hyper stylized visuals, such as futuristic cities, real estate, high end 3D products, and animated videos.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Section 6: I Grow */}
-      <section className="py-40 relative bg-[var(--color-luxury-gray)]">
+      <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">
           <MiniTitle>We Grow Together</MiniTitle>
           <motion.h2 
@@ -372,7 +400,7 @@ export default function Home() {
             className="text-lg md:text-2xl text-white/50 font-light leading-relaxed"
           >
             <p>
-              The world's first fully functional studio powered by AI, cutting 60% of professional shooting costs with a 72-hour delivery time after closing the deal. The future is here—contact us!
+              The world's first fully functional studio powered by AI, cutting 60% of professional shooting costs with a 72 hour delivery time after closing the deal. The future is here—contact us!
             </p>
           </motion.div>
         </div>
