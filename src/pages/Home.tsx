@@ -341,6 +341,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section 5: Privacy */}
+      <section className="py-40 relative z-20 bg-[var(--color-luxury-black)]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <MiniTitle>100% Discretion</MiniTitle>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-5xl md:text-7xl font-sans font-light tracking-tighter mt-8 mb-10 leading-[1.1]"
+          >
+            Absolute <span className="font-serif italic text-[var(--color-aqua-light)]">Privacy</span>
+          </motion.h2>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-lg md:text-2xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto space-y-6"
+          >
+            <p>
+              We operate as a silent partner. We will never disclose our partnership, your use of AI, or share your project assets without explicit written consent.
+            </p>
+            <p>
+              Your brand's prestige and exclusivity are our top priorities.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Section 6: I Grow */}
       <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">

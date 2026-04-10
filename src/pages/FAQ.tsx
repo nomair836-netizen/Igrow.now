@@ -32,6 +32,10 @@ const faqCategories = [
         a: "We don't just deliver a file; we engineer an \"Ecosystem.\" From one core cinematic vision, you typically receive a master long form commercial, accompanied by optimized, high impact short formats (Reels/Shorts) designed for complete digital dominance across all platforms."
       },
       {
+        q: "Do you offer standalone video editing services for content creators?",
+        a: "Yes, absolutely. We provide premium video editing services specifically tailored for content creators and YouTubers. While we can edit your existing footage as a standalone service, we also offer the option to seamlessly integrate hyper-realistic AI B-roll to elevate your content and perfectly complement your main narrative."
+      },
+      {
         q: "Can you handle 25 videos and 300 photo campaigns in several days?",
         a: "Yes. The European market is full of fast releases, and we always succeed in delivering big projects on time while maximizing quality."
       },
