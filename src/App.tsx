@@ -7,6 +7,7 @@ import FAQ from './pages/FAQ';
 import TheCollection from './pages/TheCollection';
 import MessageToTheWorld from './pages/MessageToTheWorld';
 import InvisibleWrap from './pages/InvisibleWrap';
+import Terms from './pages/Terms';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -217,7 +218,7 @@ function AppContent() {
           >
             <Link to="/#vision" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Vision</Link>
             <Link to="/#story" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Story</Link>
-            <Link to="/collection" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">The Collection</Link>
+            <Link to="/collection" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Collection <span className="text-[10px] uppercase tracking-widest opacity-50 ml-1">(Coming Soon)</span></Link>
             <Link to="/faq" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">FAQ</Link>
             <a href="#contact" className="px-6 py-2.5 rounded-full bg-white/5 hover:bg-[var(--color-aqua)] hover:text-black border border-white/10 hover:border-transparent transition-all duration-500">
               Contact Us
@@ -253,7 +254,7 @@ function AppContent() {
             <div className="flex flex-col items-center gap-8 text-xl font-light tracking-wide">
               <Link to="/#vision" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-aqua)] transition-colors">Vision</Link>
               <Link to="/#story" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-aqua)] transition-colors">Story</Link>
-              <Link to="/collection" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-aqua)] transition-colors">The Collection</Link>
+              <Link to="/collection" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-aqua)] transition-colors flex flex-col items-center">Collection <span className="text-[10px] uppercase tracking-widest opacity-50 mt-1">(Coming Soon)</span></Link>
               <Link to="/faq" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[var(--color-aqua)] transition-colors">FAQ</Link>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 px-8 py-3 rounded-full bg-white/5 hover:bg-[var(--color-aqua)] hover:text-black border border-white/10 hover:border-transparent transition-all duration-500">
                 Contact Us
@@ -269,6 +270,7 @@ function AppContent() {
         <Route path="/collection" element={<TheCollection />} />
         <Route path="/message" element={<MessageToTheWorld />} />
         <Route path="/invisible-wrap" element={<InvisibleWrap />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
 
       {/* Footer & Contact Section */}
@@ -285,7 +287,7 @@ function AppContent() {
           </div>
 
           {/* CRO Contact Form */}
-          <form className="space-y-8 mb-24" action="https://formsubmit.co/contact@igrow.now" method="POST">
+          <form className="space-y-8 mb-32" action="https://formsubmit.co/contact@igrow.now" method="POST">
             {/* FormSubmit Configuration */}
             <input type="hidden" name="_subject" value="New Project Initiation Request - I Grow" />
             <input type="hidden" name="_captcha" value="false" />
@@ -309,12 +311,50 @@ function AppContent() {
               </a>
             </div>
           </form>
+
+          {/* Creator Partnership Form */}
+          <div id="creator-form" className="mb-24 pt-16 border-t border-white/10">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-serif font-light tracking-tighter mb-6 text-red-500">
+                Creator Partnership
+              </h2>
+              <p className="text-white/50 font-light text-lg">
+                Apply for high-end YouTube video editing and channel growth.
+              </p>
+            </div>
+
+            <form className="space-y-8" action="https://formsubmit.co/contact@igrow.now" method="POST">
+              <input type="hidden" name="_subject" value="New Creator Partnership Application - I Grow" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://igrow.now/" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <input type="text" name="Name" placeholder="Your Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-red-500 transition-colors duration-500 placeholder:text-white/30" />
+                <input type="text" name="Channel Name" placeholder="Channel Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-red-500 transition-colors duration-500 placeholder:text-white/30" />
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <input type="email" name="Email" placeholder="Email Address" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-red-500 transition-colors duration-500 placeholder:text-white/30" />
+                <input type="url" name="Channel URL" placeholder="YouTube Channel URL" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-red-500 transition-colors duration-500 placeholder:text-white/30" />
+              </div>
+              <textarea name="Goals" placeholder="Tell us about your channel goals and current challenges." required rows={4} className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-red-500 transition-colors duration-500 placeholder:text-white/30 resize-none"></textarea>
+              
+              <div className="text-center pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <button type="submit" className="px-12 py-5 bg-red-500 text-white font-medium tracking-[0.2em] uppercase text-sm hover:bg-red-600 transition-colors duration-700 w-full sm:w-auto">
+                  Submit Application
+                </button>
+              </div>
+            </form>
+          </div>
           
           {/* Trust Signals & Links */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-white/10 text-sm font-light text-white/50">
             <div className="flex items-center gap-8">
-              <span>&copy; 2026 I Grow.</span>
-              <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
+              <span>&copy; 2026 I Grow. All rights reserved.</span>
+              <div className="flex items-center gap-4">
+                <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
+                <Link to="/terms" className="hover:text-white transition-colors duration-300">Terms & Conditions</Link>
+              </div>
             </div>
             <div className="flex items-center gap-6">
               <a href="https://www.instagram.com/Igroooow" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2">

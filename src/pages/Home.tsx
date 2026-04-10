@@ -403,40 +403,68 @@ export default function Home() {
       {/* Packages Section */}
       <section id="packages" className="py-40 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
             {[
               {
                 miniTitle: "One-Time Project",
                 title: "The Premiere",
-                desc: "One idea we deliver that can be uploaded to the internet in multiple ways. For example: 1 long video and 3 Reels."
+                desc: "One idea we deliver that can be uploaded to the internet in multiple ways. For example: 1 long video and 3 Reels.",
+                link: "#contact"
               },
               {
                 miniTitle: "Multiple Projects",
                 title: "The Franchise",
-                desc: "A comprehensive package for ongoing campaigns. We provide consistent, high-quality deliverables tailored to your brand's evolving needs."
+                desc: "A comprehensive package for ongoing campaigns. We provide consistent, high-quality deliverables tailored to your brand's evolving needs.",
+                link: "#contact"
               }
             ].map((pkg, i) => (
-              <motion.div
+              <motion.a
+                href={pkg.link}
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="p-10 rounded-3xl relative overflow-hidden glass glass-hover group"
+                className="block p-10 rounded-3xl relative overflow-hidden glass glass-hover group cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-aqua)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative z-10">
                   <div className="text-[10px] sm:text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-aqua)] mb-6">
                     {pkg.miniTitle}
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-serif mb-6">{pkg.title}</h3>
+                  <h3 className="text-3xl md:text-4xl font-serif mb-6 group-hover:text-[var(--color-aqua-light)] transition-colors duration-500">{pkg.title}</h3>
                   <p className="text-white/50 font-light leading-relaxed text-lg">
                     {pkg.desc}
                   </p>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
+
+          {/* Content Creator Partnership Box */}
+          <motion.a
+            href="#creator-form"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="block max-w-5xl mx-auto p-8 rounded-3xl relative overflow-hidden glass group cursor-pointer border-red-500/20 hover:border-red-500/40 transition-colors duration-500"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div>
+                <div className="text-[10px] sm:text-xs font-medium tracking-[0.25em] uppercase text-red-500 mb-4">
+                  Content Creator Partnership
+                </div>
+                <h3 className="text-2xl md:text-3xl font-serif group-hover:text-red-400 transition-colors duration-500">YouTube Video Editing</h3>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-red-500/30 text-red-400 text-sm tracking-widest uppercase group-hover:bg-red-500/10 transition-colors duration-500">
+                  Apply Now
+                </span>
+              </div>
+            </div>
+          </motion.a>
         </div>
       </section>
     </>

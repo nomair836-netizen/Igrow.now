@@ -66,7 +66,7 @@ const faqCategories = [
       },
       {
         q: "Do you accept projects from any industry or startup?",
-        a: "To maintain our high standards, we exclusively partner with established, premium brands worldwide, with a strong focus on the UK and Europe. Our expertise is highly specialized in luxury sectors: fine fragrances, Swiss watches, 5 star hospitality, new car launches, and premium real estate."
+        a: "To maintain our high standards, we exclusively partner with established, premium brands worldwide. Our expertise is highly specialized in luxury sectors: fine fragrances, Swiss watches, 5 star hospitality, new car launches, and premium real estate."
       }
     ]
   }

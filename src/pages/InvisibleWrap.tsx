@@ -56,28 +56,6 @@ const sections = [
         We are building something much bigger. We have massive future projects that go far beyond normal video production. Our true goal is to drive real change in the world of visual content and leave a lasting impact and legacy.
       </p>
     )
-  },
-  {
-    id: 6,
-    content: (
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="glass bg-white/[0.02] border border-white/10 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden group"
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-aqua)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-        <BookOpen className="w-8 h-8 text-[var(--color-aqua)] mx-auto mb-6 opacity-80" />
-        <h3 className="text-xl md:text-2xl font-medium text-white mb-4">You got here?</h3>
-        <p className="text-sm md:text-base text-white/60 font-light mb-8 max-w-md mx-auto">
-          I'll give you a small guide book here. Discover the exact neuromarketing principles we use to craft our invisible wrap.
-        </p>
-        <button className="inline-flex items-center gap-2 px-8 py-3 bg-white text-black font-medium tracking-widest uppercase text-xs hover:bg-[var(--color-aqua)] transition-colors duration-500 rounded-full">
-          <Sparkles className="w-3.5 h-3.5" />
-          Download Guide Book
-        </button>
-      </motion.div>
-    )
   }
 ];
 
