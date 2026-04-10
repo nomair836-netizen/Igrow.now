@@ -341,44 +341,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 5: Professional Workflow + Privacy */}
-      <section className="py-40 relative z-10 overflow-hidden">
-        {/* Full-width Background Image (Parallax) */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop')` }}
-        />
-        {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-[var(--color-luxury-black)]/85" />
-
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <MiniTitle>For Our Partners</MiniTitle>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl md:text-6xl font-serif font-light tracking-tighter mb-10"
-          >
-            Professional Workflow + Privacy
-          </motion.h2>
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-2xl text-white/70 font-light leading-relaxed space-y-6"
-          >
-            <p>
-              As we only work with clients who meet our standards, and because AI is an emerging technology that some aren't familiar with, we provide full privacy. You never have to disclose that it's AI.
-            </p>
-            <p>
-              This applies to hyper stylized visuals, such as futuristic cities, real estate, high end 3D products, and animated videos.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Section 6: I Grow */}
       <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">
