@@ -285,13 +285,19 @@ function AppContent() {
           </div>
 
           {/* CRO Contact Form */}
-          <form className="space-y-8 mb-24" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-8 mb-24" action="https://formsubmit.co/contact@igrow.now" method="POST">
+            {/* FormSubmit Configuration */}
+            <input type="hidden" name="_subject" value="New Project Initiation Request - I Grow" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://igrow.now/" />
+            <input type="hidden" name="_template" value="table" />
+
             <div className="grid md:grid-cols-2 gap-8">
-              <input type="text" placeholder="Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
-              <input type="text" placeholder="Brand Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
+              <input type="text" name="Name" placeholder="Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
+              <input type="text" name="Brand Name" placeholder="Brand Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
             </div>
-            <input type="url" placeholder="Website URL" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
-            <textarea placeholder="Tell us about your vision." required rows={4} className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30 resize-none"></textarea>
+            <input type="url" name="Website" placeholder="Website URL" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
+            <textarea name="Vision" placeholder="Tell us about your vision." required rows={4} className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30 resize-none"></textarea>
             
             <div className="text-center pt-8">
               <button type="submit" className="px-12 py-5 bg-white text-black font-medium tracking-[0.2em] uppercase text-sm hover:bg-[#E5E4E2] transition-colors duration-700 w-full md:w-auto">
