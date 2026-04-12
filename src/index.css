@@ -23,6 +23,20 @@
   h1, h2, h3 {
     @apply tracking-tight;
   }
+
+  /* Protect Images from being dragged or easily selected */
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none; /* Prevents right click on images directly */
+  }
 }
 
 .glass {

@@ -71,8 +71,18 @@ function AppContent() {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
+    // Global right-click protection to prevent saving images
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener('contextmenu', handleContextMenu);
+    
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('contextmenu', handleContextMenu);
+    };
   }, []);
 
   const handleLogoClick = () => {
