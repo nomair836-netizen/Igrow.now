@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MiniTitle } from '../components/Shared';
 import AwardBanner from '../components/AwardBanner';
+import ShowcaseVideo from '../components/ShowcaseVideo';
 import ComparisonTable from '../components/ComparisonTable';
 import InteractiveMessage from '../components/InteractiveMessage';
 
@@ -28,8 +29,10 @@ export default function Home() {
 
       <AwardBanner />
 
+      <ShowcaseVideo />
+
       {/* Section 1: Our Vision */}
-      <section id="vision" className="pt-64 pb-40 relative overflow-hidden">
+      <section id="vision" className="pt-32 pb-40 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-16 lg:gap-12 items-center">
             
