@@ -11,7 +11,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden gradient-bg">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/abstract-dark/1920/1080?blur=10')] opacity-5 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[url('/assets/vision-bg.jpg')] opacity-5 mix-blend-overlay bg-cover bg-center pointer-events-none" />
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
           <MiniTitle>Creative Studio</MiniTitle>
@@ -80,10 +80,13 @@ export default function Home() {
               <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-aqua)]/10 to-transparent mix-blend-overlay z-10 pointer-events-none transition-opacity duration-700 group-hover:opacity-50" />
                 <img 
-                  src="https://i.ibb.co/4yYrjqv/2-copy.jpg" 
+                  src="/assets/vision-bg.jpg" 
                   alt="I Grow Vision" 
-                  className="w-full h-full object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
+                  className="w-full h-full object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105 select-none pointer-events-none"
                   referrerPolicy="no-referrer"
+                  onContextMenu={(e) => e.preventDefault()}
+                  onDragStart={(e) => e.preventDefault()}
+                  draggable="false"
                 />
               </div>
               
@@ -251,7 +254,7 @@ export default function Home() {
         {/* Full-width Background Image (Parallax) */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url('https://i.ibb.co/KjJc01YB/freepik-inspired-by-this-positon-and-camera-angel-img1-i-want-a-super-realistic-portrait-out-door-is.png')` }}
+          style={{ backgroundImage: `url('/assets/interactive-bg.png')` }}
         />
         {/* Dark Overlay for Text Readability */}
         <div className="absolute inset-0 bg-[var(--color-luxury-black)]/80" />

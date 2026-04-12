@@ -13,7 +13,7 @@ const projects = [
     glowClass: "shadow-[0_0_50px_rgba(255,255,255,0.03)]",
     textClass: "text-white/60",
     gradient: "from-white/10 via-black/5 to-transparent",
-    image: "https://i.ibb.co/s7zLgvX/Green-copy.png"
+    image: "/assets/project-genesis.png"
   },
   {
     id: 2,
@@ -70,10 +70,13 @@ const ProjectCard = ({ project, isLocked = false }: { project: any, isLocked?: b
         <img 
           src={project.image} 
           alt={project.title}
-          className={`w-full h-full object-cover ${isLocked ? '' : 'opacity-60 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105 transform'}`}
+          className={`w-full h-full object-cover select-none pointer-events-none ${isLocked ? '' : 'opacity-60 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105 transform'}`}
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+          draggable="false"
         />
         {/* Subtle gradient overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
       </div>
     )}
 
