@@ -45,7 +45,7 @@ const sections = [
     id: 4,
     content: (
       <h2 className="text-2xl md:text-3xl font-serif font-light tracking-tighter mb-8 text-white">
-        But I Grow.now is more than just a creative studio or agency.
+        But I Grow is more than just a Growth Partner.
       </h2>
     )
   },

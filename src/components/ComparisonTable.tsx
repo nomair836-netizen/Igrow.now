@@ -33,7 +33,7 @@ export default function ComparisonTable() {
                 <th className="p-6 border-b border-white/10 text-white/50 font-light text-lg w-1/4">Features</th>
                 <th className="p-6 border-b border-white/10 text-center w-1/4">
                   <div className="text-[var(--color-aqua)] font-serif text-2xl mb-2">I Grow</div>
-                  <div className="text-xs text-[var(--color-aqua)]/70 uppercase tracking-widest">AI Powered Studio</div>
+                  <div className="text-xs text-[var(--color-aqua)]/70 uppercase tracking-widest">Growth Partner</div>
                 </th>
                 <th className="p-6 border-b border-white/10 text-center w-1/4">
                   <div className="text-white font-serif text-2xl mb-2">Traditional</div>

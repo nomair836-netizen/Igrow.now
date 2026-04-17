@@ -7,12 +7,12 @@ const faqCategories = [
     category: "Process & Technology",
     faqs: [
       {
-        q: "Do you just use AI to generate videos automatically?",
-        a: "No. We are filmmakers first. With 7 years of directorial experience, we use AI purely as a high end tool, not a replacement for human vision. AI provides the unmatched speed, but every frame, shadow, and cut is guided by a human Director’s eye to ensure cinematic perfection."
+        q: "Do you just use Generative Cinema to automate videos?",
+        a: "No. We are behavioral psychologists and filmmakers first. With 7 years of directorial experience, we use Generative Cinema purely as a high-end tool for mass persuasion, not a replacement for human vision. It provides unmatched speed, but every frame, shadow, and cut is engineered to trigger psychological engagement and brand loyalty."
       },
       {
-        q: "Do you only use AI?",
-        a: "No. We use our own unique methods, seamlessly mixing our own real life footage and CGI with tools like After Effects and Blender."
+        q: "Do you only use Generative Cinema?",
+        a: "No. We utilize advanced neuromarketing techniques, seamlessly mixing real-life footage and CGI with tools like After Effects and Blender to craft the perfect psychological trigger."
       },
       {
         q: "Will the final video look \"fake\" or computer generated?",
@@ -33,7 +33,7 @@ const faqCategories = [
       },
       {
         q: "Do you offer standalone video editing services for content creators?",
-        a: "Yes, absolutely. We provide premium video editing services specifically tailored for content creators and YouTubers. While we can edit your existing footage as a standalone service, we also offer the option to seamlessly integrate hyper-realistic AI B-roll to elevate your content and perfectly complement your main narrative."
+        a: "Yes, absolutely. We provide premium psychological editing services scaled for high-growth content creators. While we can edit your footage as a standalone service, we also seamlessly integrate hyper-realistic Generative Cinema B-roll to elevate retention and complement your narrative."
       },
       {
         q: "Can you handle 25 videos and 300 photo campaigns in several days?",
@@ -45,7 +45,7 @@ const faqCategories = [
       },
       {
         q: "Can I feature a specific model or celebrity in my campaign?",
-        a: "Using a real person's likeness without explicit written consent is strictly prohibited and illegal. However, for visionary brands and major campaigns, I Grow facilitates official partnerships with a curated selection of global stars and models who are open to AI-driven projects. The talent's licensing fee is simply added to your final project cost. Think of it as casting a superstar for your commercial the 2026 way—eliminating the massive overhead of flights, luxury hotels, and on-set logistics, while delivering a flawless, high-end performance."
+        a: "Using a real person's likeness without explicit written consent is strictly prohibited and illegal. However, for visionary brands and major campaigns, I Grow facilitates official partnerships with a curated selection of global stars and models who are open to Generative Cinema licensing. The talent's licensing fee is simply added to your final project cost. Think of it as casting a superstar for your commercial the 2026 way—eliminating the massive overhead of flights, luxury hotels, and on-set logistics, while delivering a flawless, high-end performance."
       }
     ]
   },
@@ -61,8 +61,8 @@ const faqCategories = [
         a: "We offer worldwide services and secure payment choices, with PayPal being our primary option."
       },
       {
-        q: "We don’t want our audience to know we used AI. Is that possible?",
-        a: "Absolutely. We guarantee 100% discretion and strict privacy. You never have to disclose our methods. We act as your secret weapon behind the scenes, delivering hyper stylized, photorealistic results that look indistinguishable from a massive studio production."
+        q: "We don’t want our audience to know we used Generative Cinema. Is that possible?",
+        a: "Absolutely. We guarantee 100% discretion and strict privacy. You never have to disclose our methods. We act as your secret strategic weapon behind the scenes, delivering hyper-stylized campaigns that optimize human behavior and look indistinguishable from a massive studio production."
       },
       {
         q: "Do you accept projects from any industry or startup?",

@@ -6,5 +6,5 @@ Contact: contact@igrow.now
 /* SITE */
 Standards: HTML5, CSS3, React, TypeScript
 Components: Framer Motion, Tailwind CSS
-Software: AI-Powered Video Production
+Software: Generative Cinema & Psychological Marketing
 Security: Enterprise-grade CSP, Anti-scraping protocols

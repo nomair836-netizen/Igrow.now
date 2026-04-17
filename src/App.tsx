@@ -416,7 +416,7 @@ function AppContent() {
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">1. Information We Collect</h4>
                 <p>We only collect information necessary to evaluate and execute your project, including your name, brand name, website URL, and project vision submitted via our contact form.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">2. 100% Discretion Guarantee</h4>
-                <p>We operate as a white label, silent partner. We will never disclose our partnership, your use of AI, or share your project assets without explicit written consent. Your brand's prestige and exclusivity are our top priorities.</p>
+                <p>We operate as a silent strategic partner. We will never disclose our partnership, your use of Generative Cinema, or share your project assets without explicit written consent. Your brand's prestige and exclusivity are our top priorities.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">3. Analytics & Tracking</h4>
                 <p>We use industry standard analytics tools (such as Google Analytics and Hotjar) to understand how visitors interact with our website. This data is anonymized and used strictly to improve our user experience.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">4. Contact Us</h4>

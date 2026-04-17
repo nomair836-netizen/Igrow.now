@@ -109,7 +109,7 @@ export default function AwardBanner() {
           <LaurelIcon />
           <span>101% Perfection</span>
           <StarIcon />
-          <span>AI Powered</span>
+          <span>Generative Cinema</span>
           <SparkleIcon />
           <span>Future Ready</span>
           <AwardIcon />
@@ -132,7 +132,7 @@ export default function AwardBanner() {
           <StarIcon />
           <span>Pixel Perfect</span>
           <SparkleIcon />
-          <span>Next Gen Studio</span>
+          <span>Growth Partner</span>
         </span>
       </ParallaxText>
     </section>

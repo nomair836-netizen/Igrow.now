@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/abstract-dark/1920/1080?blur=10')] opacity-5 mix-blend-overlay" />
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
-          <MiniTitle>Creative Studio</MiniTitle>
+          <MiniTitle>Growth Partner</MiniTitle>
           
           <motion.h1 
             initial={{ opacity: 0, y: 40, filter: 'blur(20px)' }}
@@ -61,10 +61,10 @@ export default function Home() {
                   The gap between <span className="italic text-white">Imagination</span> and <span className="italic text-white">Reality</span> is finally closed.
                 </p>
                 <p className="text-lg text-white/50 font-light leading-relaxed">
-                  I Grow treats AI as a world changing technology—like fire, the steam engine, or electricity—that will make our lives completely different than they were before. We have tested these tools, delivered amazing ideas, and built entire worlds from a single spark. Changing the way we treat commercials forever, we master our tools and train our special models to deliver 101% perfection. The future is here, and it’s cinematic. Follow us!
+                  I Grow treats Generative Cinema as a world-changing technology—like fire, the steam engine, or electricity—that will dictate the future of human engagement. We have tested these tools, engineered persuasive psychological frameworks, and built entire campaign worlds from a single spark. Changing the way we treat high-end advertising forever, we master human behavior and train our special models to deliver 101% perfection. The future is here, and it’s deeply psychological. Follow us!
                 </p>
                 <p className="text-sm text-[var(--color-aqua-dark)] font-mono">
-                  *By 101%, we mean 100% for real-life results and 1% for the borders AI breaks.
+                  *By 101%, we mean 100% for real-life results and 1% for the borders Generative Cinema breaks.
                 </p>
               </motion.div>
             </div>
@@ -234,7 +234,7 @@ export default function Home() {
                       After <span className="font-sans font-medium italic text-[var(--color-aqua-light)]">7 years</span> in filmmaking, we decided to evolve.
                     </p>
                     <p className="text-lg text-white/50 font-light leading-relaxed">
-                      We rebranded ourselves. We emerged as I Grow: the world's first fully AI-powered studio. We combine our deep cinematic expertise with AI as our ultimate tool.
+                      We rebounded our philosophy. We emerged as I Grow: the world's premier Growth Partner leveraging Generative Cinema. We fuse our deep cinematic expertise and psychological insight with Generative Cinema as our ultimate tool for mass persuasion.
                     </p>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ export default function Home() {
           
           {/* Centered Header */}
           <div className="text-center max-w-3xl mx-auto mb-24">
-            <MiniTitle>It's a Craft. AI is a Tool.</MiniTitle>
+            <MiniTitle>It's a Craft. Generative Cinema is a Tool.</MiniTitle>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -365,7 +365,7 @@ export default function Home() {
             className="text-lg md:text-2xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto space-y-6"
           >
             <p>
-              We operate as a silent partner. We will never disclose our partnership, your use of AI, or share your project assets without explicit written consent.
+              We operate as a silent strategic partner. We will never disclose our partnership, our methods, or share your project assets without explicit written consent.
             </p>
             <p>
               Your brand's prestige and exclusivity are our top priorities.
@@ -395,7 +395,7 @@ export default function Home() {
             className="text-lg md:text-2xl text-white/50 font-light leading-relaxed"
           >
             <p>
-              The world's first fully functional studio powered by AI, cutting 60% of professional shooting costs with a 72 hour delivery time after closing the deal. The future is here—contact us!
+              The world's premier Growth Partner powered by deep psychology and Generative Cinema, delivering highly persuasive, high-end public relations campaigns with a 72 hour delivery time after closing the deal. The future of engagement is here—partner with us!
             </p>
           </motion.div>
         </div>

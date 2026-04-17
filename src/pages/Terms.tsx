@@ -40,7 +40,7 @@ export default function Terms() {
           <section className="space-y-4">
             <h2 className="text-2xl font-serif text-white">Deliverables</h2>
             <p>
-              The client will receive the final, polished, and rendered video file only. Source files, raw footage, and AI generation prompts remain the exclusive property of I Grow.
+              The client will receive the final, polished, and rendered video file only. Source files, raw footage, and Generative Cinema algorithms remain the exclusive property of I Grow.
             </p>
           </section>
 
