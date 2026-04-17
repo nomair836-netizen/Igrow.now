@@ -17,10 +17,10 @@ export default function ShowcaseVideo() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6">
-            <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium text-[var(--color-aqua)]">Featured Showcase</span>
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium text-[var(--color-aqua)]">Classified Protocol</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-serif font-light tracking-tighter">
-            Experience the <span className="italic text-white/50">Future</span>
+            Witness the <span className="italic text-white/50">Standard</span>
           </h2>
         </motion.div>
 

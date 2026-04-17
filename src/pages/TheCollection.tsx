@@ -53,7 +53,20 @@ const projects = [
   }
 ];
 
-const ProjectCard = ({ project, isLocked = false }: { project: any, isLocked?: boolean }) => (
+interface ProjectItem {
+  id: number;
+  title: string;
+  category: string;
+  color: string;
+  bgClass: string;
+  borderClass: string;
+  glowClass: string;
+  textClass: string;
+  gradient: string;
+  image: string | null;
+}
+
+const ProjectCard: React.FC<{ project: ProjectItem, isLocked?: boolean }> = ({ project, isLocked = false }) => (
   <motion.div 
     initial={{ opacity: 0, y: 40 }}
     whileInView={{ opacity: 1, y: 0 }}

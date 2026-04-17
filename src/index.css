@@ -100,3 +100,21 @@
     80% { transform: translate(3%,35%) }
     90% { transform: translate(-10%,10%) }
 }
+
+.warp-tunnel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(0,229,255,0.1) 45deg, transparent 90deg, rgba(153,0,255,0.1) 135deg, transparent 180deg, rgba(0,229,255,0.1) 225deg, transparent 270deg, rgba(153,0,255,0.1) 315deg, transparent 360deg);
+  animation: spin-warp 2s linear infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes spin-warp {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

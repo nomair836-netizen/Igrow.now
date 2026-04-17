@@ -8,7 +8,7 @@ export default function ComparisonTable() {
     <section className="py-40 relative">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
-          <MiniTitle>Why Choose Us</MiniTitle>
+          <MiniTitle>The Unfair Advantage</MiniTitle>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,10 +30,10 @@ export default function ComparisonTable() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr>
-                <th className="p-6 border-b border-white/10 text-white/50 font-light text-lg w-1/4">Features</th>
+                <th className="p-6 border-b border-white/10 text-white/50 font-light text-lg w-1/4">Metrics of Dominance</th>
                 <th className="p-6 border-b border-white/10 text-center w-1/4">
                   <div className="text-[var(--color-aqua)] font-serif text-2xl mb-2">I Grow</div>
-                  <div className="text-xs text-[var(--color-aqua)]/70 uppercase tracking-widest">Growth Partner</div>
+                  <div className="text-xs text-[var(--color-aqua)]/70 uppercase tracking-widest">The Standard</div>
                 </th>
                 <th className="p-6 border-b border-white/10 text-center w-1/4">
                   <div className="text-white font-serif text-2xl mb-2">Traditional</div>

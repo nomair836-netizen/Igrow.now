@@ -22,7 +22,7 @@ export default function Home() {
             transition={{ duration: 1.5, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-[6rem] sm:text-[8rem] md:text-[12rem] lg:text-[16rem] font-display font-bold tracking-tighter leading-[0.8] mb-8 text-gradient-aqua"
           >
-            I Grow
+            I Grow.
           </motion.h1>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function Home() {
             
             {/* Text Content - Left Side */}
             <div className="lg:col-span-5 relative z-20">
-              <MiniTitle>A Message from the Future</MiniTitle>
+              <MiniTitle>The Epiphany</MiniTitle>
               
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export default function Home() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="text-5xl md:text-7xl font-sans font-light tracking-tighter mb-10 leading-[1.1]"
               >
-                Our <span className="font-serif italic text-white/80">Vision</span>
+                Architects of <span className="font-serif italic text-white/80">Perception</span>
               </motion.h2>
               
               <motion.div 
@@ -58,13 +58,13 @@ export default function Home() {
                 className="space-y-8"
               >
                 <p className="text-xl md:text-3xl text-white/80 font-serif leading-relaxed">
-                  The gap between <span className="italic text-white">Imagination</span> and <span className="italic text-white">Reality</span> is finally closed.
+                  The era of traditional production is <span className="italic text-white">dead.</span>
                 </p>
                 <p className="text-lg text-white/50 font-light leading-relaxed">
-                  I Grow treats Generative Cinema as a world-changing technology—like fire, the steam engine, or electricity—that will dictate the future of human engagement. We have tested these tools, engineered persuasive psychological frameworks, and built entire campaign worlds from a single spark. Changing the way we treat high-end advertising forever, we master human behavior and train our special models to deliver 101% perfection. The future is here, and it’s deeply psychological. Follow us!
+                  We do not "make videos" or "run campaigns." We construct visual realities and engineer market supremacy. By merging ruthless business strategy with absolute cinematic mastery, we treat your brand's equity as our own. We don't take briefs; we dictate the future of your visual identity.
                 </p>
                 <p className="text-sm text-[var(--color-aqua-dark)] font-mono">
-                  *By 101%, we mean 100% for real-life results and 1% for the borders Generative Cinema breaks.
+                  The gap between imagination and reality no longer exists. We closed it.
                 </p>
               </motion.div>
             </div>
@@ -181,7 +181,7 @@ export default function Home() {
                 className="mt-12"
               >
                 <p className="text-xs md:text-sm text-[var(--color-aqua-dark)] font-mono border-t border-white/10 pt-6">
-                  *And here, by 101%, we mean 100% for real-life results and 1% for creativity.
+                  *Perfection is not the goal. It is the baseline.
                 </p>
               </motion.div>
 
@@ -199,7 +199,7 @@ export default function Home() {
                 className="text-5xl md:text-7xl font-sans font-light tracking-tighter mb-12 leading-[1.1]"
               >
                 The <span className="relative inline-block font-serif italic text-white z-10 px-1">
-                  Story
+                  Philosophy
                   <motion.span 
                     initial={{ scaleX: 0 }}
                     whileInView={{ scaleX: 1 }}
@@ -231,10 +231,10 @@ export default function Home() {
                 <div className="pl-8 space-y-10">
                   <div>
                     <p className="text-3xl md:text-4xl text-white font-serif leading-snug mb-6">
-                      After <span className="font-sans font-medium italic text-[var(--color-aqua-light)]">7 years</span> in filmmaking, we decided to evolve.
+                      After <span className="font-sans font-medium italic text-[var(--color-aqua-light)]">7 years</span> in elite production, we rendered the old model obsolete.
                     </p>
                     <p className="text-lg text-white/50 font-light leading-relaxed">
-                      We rebounded our philosophy. We emerged as I Grow: the world's premier Growth Partner leveraging Generative Cinema. We fuse our deep cinematic expertise and psychological insight with Generative Cinema as our ultimate tool for mass persuasion.
+                      We rebounded our philosophy. We emerged as I Grow. We do not take briefs; we dictate the future of your visual identity. By fusing ruthless psychological insight with Generative Cinema, we engineer mass persuasion. Perfection is not our goal; it is our baseline.
                     </p>
                   </div>
                 </div>
@@ -285,7 +285,8 @@ export default function Home() {
             >
               <span className="text-6xl md:text-8xl font-serif italic text-white/10">01</span>
               <p className="text-2xl md:text-3xl text-white/80 font-light leading-relaxed">
-                We at I Grow are not AI <span className="font-serif italic text-white">"learners"</span>; we went to <span className="text-white">film school</span>, <span className="text-white">business school</span>, and have delivered hundreds of successful projects.
+                <strong className="block text-white mb-2 font-serif text-3xl">Architectural Precision.</strong>
+                We do not play with tools; we engineer realities. Born from film school and ruthless business mastery, we execute with lethal precision.
               </p>
             </motion.div>
 
@@ -299,7 +300,8 @@ export default function Home() {
             >
               <span className="text-6xl md:text-8xl font-serif italic text-white/10">02</span>
               <p className="text-2xl md:text-3xl text-white/80 font-light leading-relaxed">
-                We don't use basic user friendly tools. Since 2024, we've been developing and training our <span className="font-serif italic text-white">one of a kind models</span> and tools, maximizing results and details.
+                <strong className="block text-white mb-2 font-serif text-3xl">Psychological Warfare.</strong>
+                We do not use basic tools. We sculpt proprietary models to bend perception. Every shadow, texture, and cut is engineered to bypass logic and ignite raw desire.
               </p>
             </motion.div>
 
@@ -307,10 +309,84 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Industry Verticals Marquee */}
+      <section className="py-20 border-t border-b border-white/5 bg-[var(--color-luxury-black)] overflow-hidden">
+        <div className="flex w-[200%] md:w-[150%] animate-[marquee_20s_linear_infinite]">
+          <div className="flex w-1/2 justify-around items-center">
+            {['Haute Horlogerie', 'Luxury Real Estate', 'Automotive Elite', 'Private Aviation', 'High-End Hospitality', 'Venture Capital'].map((vertical, i) => (
+              <div key={i} className="text-xl md:text-3xl font-serif italic text-white/20 whitespace-nowrap px-8">
+                {vertical}
+              </div>
+            ))}
+          </div>
+          <div className="flex w-1/2 justify-around items-center">
+            {['Haute Horlogerie', 'Luxury Real Estate', 'Automotive Elite', 'Private Aviation', 'High-End Hospitality', 'Venture Capital'].map((vertical, i) => (
+              <div key={i} className="text-xl md:text-3xl font-serif italic text-white/20 whitespace-nowrap px-8">
+                {vertical}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Deployment Protocol */}
+      <section className="py-40 relative z-20 bg-[#020202]">
+        <div className="max-w-6xl mx-auto px-6">
+          <MiniTitle>The Methodology</MiniTitle>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-4xl md:text-6xl font-serif font-light tracking-tighter mb-20"
+          >
+            The Deployment Protocol
+          </motion.h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                phase: "Phase 01",
+                title: "Architectural Intel",
+                desc: "We extract your market distinctives and map your competitors' psychological blind spots. We formulate the strategy."
+              },
+              {
+                phase: "Phase 02",
+                title: "Generative Forge",
+                desc: "Our proprietary AI pipelines synthesize hyper-realistic assets at speeds traditional studios cannot comprehend."
+              },
+              {
+                phase: "Phase 03",
+                title: "Market Strike",
+                desc: "We deploy the assets across synchronized channels, guaranteeing absolute market suffocation and engagement."
+              }
+            ].map((protocol, i) => (
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
+                key={i}
+                className="bg-white/[0.02] border border-white/5 p-10 rounded-2xl relative overflow-hidden group"
+              >
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--color-aqua)] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left" />
+                <span className="text-[10px] font-mono text-[var(--color-aqua)] tracking-widest uppercase mb-4 block">
+                  {protocol.phase}
+                </span>
+                <h3 className="text-2xl font-serif text-white mb-4 group-hover:text-[var(--color-aqua-light)] transition-colors duration-300">{protocol.title}</h3>
+                <p className="text-white/50 font-light leading-relaxed text-sm">
+                  {protocol.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section 4: What We Do */}
       <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">
-          <MiniTitle>For Our Partners</MiniTitle>
+          <MiniTitle>The Velvet Rope</MiniTitle>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -318,7 +394,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-4xl md:text-6xl font-serif font-light tracking-tighter mb-10"
           >
-            What We Do
+            The Selection
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -327,7 +403,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-lg md:text-2xl text-white/50 font-light leading-relaxed space-y-6"
           >
-            <p>We exclusively serve established luxury brands worldwide, focusing on the UK and European markets in fields like:</p>
+            <p>This is not a plea for business. We partner exclusively with visionaries prepared to scale aggressively.</p>
             <ul className="space-y-4 pl-4">
               {['Fine Perfumes & Swiss Watches', '5 Star Hotels', 'New Automobile Launches', 'Premium Real Estate'].map((item, i) => (
                 <li key={i} className="flex items-center gap-4">
@@ -336,7 +412,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <p className="pt-4">And we are open to any kind of creative advertisement.</p>
+            <p className="pt-4">If you are not prepared to rewrite your industry's rules, look elsewhere.</p>
             <p className="text-sm text-[var(--color-aqua-dark)] italic pt-4">
               *Note: We strictly vet all projects and only work with verified businesses.
             </p>
@@ -377,7 +453,7 @@ export default function Home() {
       {/* Section 6: I Grow */}
       <section className="py-40 relative z-20 bg-[var(--color-luxury-gray)] shadow-[0_-30px_60px_rgba(0,0,0,0.8)]">
         <div className="max-w-4xl mx-auto px-6">
-          <MiniTitle>We Grow Together</MiniTitle>
+          <MiniTitle>The Final Axiom</MiniTitle>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -395,7 +471,7 @@ export default function Home() {
             className="text-lg md:text-2xl text-white/50 font-light leading-relaxed"
           >
             <p>
-              The world's premier Growth Partner powered by deep psychology and Generative Cinema, delivering highly persuasive, high-end public relations campaigns with a 72 hour delivery time after closing the deal. The future of engagement is here—partner with us!
+              We do not just make videos. We arm you with a multi-platform visual arsenal to suffocate the competition. 72 hours from conception to absolute market dominance. The future of engagement has arrived.
             </p>
           </motion.div>
         </div>
@@ -403,42 +479,73 @@ export default function Home() {
 
       <ComparisonTable />
 
-      {/* Packages Section */}
+      {/* Structured Deployments Section */}
       <section id="packages" className="py-40 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
+          <MiniTitle>The Deliverables</MiniTitle>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-4xl md:text-6xl font-serif font-light tracking-tighter mb-16 text-center"
+          >
+            Service Level Agreements
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
             {[
               {
-                miniTitle: "One-Time Project",
+                miniTitle: "SLA Tier 01",
                 title: "The Premiere",
-                desc: "One idea we deliver that can be uploaded to the internet in multiple ways. For example: 1 long video and 3 Reels.",
+                desc: "One devastating concept. Executed for absolute impact across multiple formats. One full-scale campaign, fractured into perfectly engineered short-form assets.",
+                specs: [
+                  "1x Flagship Cinematic Asset (4K / 60s)",
+                  "6x Fractured Short-form Variants (9:16)",
+                  "Custom Sound Design & Psychological Audio Engineering",
+                  "72-Hour Rapid Deployment Protocol"
+                ],
                 link: "#contact"
               },
               {
-                miniTitle: "Multiple Projects",
-                title: "The Franchise",
-                desc: "A comprehensive package for ongoing campaigns. We provide consistent, high-quality deliverables tailored to your brand's evolving needs.",
+                miniTitle: "SLA Tier 02",
+                title: "The Dynasty",
+                desc: "Complete market suffocation. A continuous flow of hyper-premium visual assets designed to dominate the timeline and rewrite your industry's rules.",
+                specs: [
+                  "4x Flagship Cinematic Assets Per Month",
+                  "24x Omnichannel Social Micro-Assets",
+                  "Dedicated Account Architect & Creative Lead",
+                  "Priority Global Processing & Unlimited Revisions"
+                ],
                 link: "#contact"
               }
             ].map((pkg, i) => (
               <motion.a
                 href={pkg.link}
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="block p-10 rounded-3xl relative overflow-hidden glass glass-hover group cursor-pointer"
+                className="block p-10 rounded-3xl relative overflow-hidden bg-black/40 border border-white/10 hover:border-[var(--color-aqua)]/50 group cursor-pointer transition-all duration-700"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-aqua)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-aqua)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                 <div className="relative z-10">
-                  <div className="text-[10px] sm:text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-aqua)] mb-6">
+                  <div className="text-[10px] sm:text-xs font-mono tracking-[0.25em] uppercase text-[var(--color-aqua)] mb-6">
                     {pkg.miniTitle}
                   </div>
                   <h3 className="text-3xl md:text-4xl font-serif mb-6 group-hover:text-[var(--color-aqua-light)] transition-colors duration-500">{pkg.title}</h3>
-                  <p className="text-white/50 font-light leading-relaxed text-lg">
+                  <p className="text-white/50 font-light leading-relaxed text-lg mb-8">
                     {pkg.desc}
                   </p>
+                  <ul className="space-y-4 pt-8 border-t border-white/5">
+                    {pkg.specs.map((spec, j) => (
+                      <li key={j} className="flex items-start gap-4 text-sm font-light text-white/70">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-aqua)] mt-1.5 shrink-0" />
+                        <span>{spec}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.a>
             ))}

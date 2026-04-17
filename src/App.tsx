@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useTransform, useMotionValueEvent } from 'motion/react';
-import { Sparkles, Instagram, Twitter, Linkedin, Github, Mail, X, Menu, Youtube } from 'lucide-react';
+import { Sparkles, Instagram, Twitter, Linkedin, Github, Mail, X, Menu, Youtube, Lock } from 'lucide-react';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
 import TheCollection from './pages/TheCollection';
 import MessageToTheWorld from './pages/MessageToTheWorld';
 import InvisibleWrap from './pages/InvisibleWrap';
 import Terms from './pages/Terms';
+import CosmicPortal from './components/CosmicPortal';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -187,7 +188,7 @@ function AppContent() {
         className="fixed top-0 w-full z-40 glass border-b border-white/5"
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 sm:gap-6">
+          <div className="w-1/3 flex items-center">
             <Link to="/">
               <motion.div style={{ perspective: 1000 }}>
                 <motion.div 
@@ -202,46 +203,34 @@ function AppContent() {
                 </motion.div>
               </motion.div>
             </Link>
-            
-            <Link to="/message" className="block">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="relative group"
-              >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[var(--color-aqua)] to-[#00ffcc] rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
-                <span className="relative text-[9px] sm:text-xs uppercase tracking-widest font-medium text-white group-hover:text-black transition-colors duration-300 border border-white/20 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-black/80 group-hover:bg-[var(--color-aqua)] backdrop-blur-sm flex items-center gap-1.5 sm:gap-2">
-                  <Sparkles className="w-3 h-3 shrink-0" />
-                  <span className="hidden sm:inline">A Message to the World</span>
-                  <span className="sm:hidden">Message</span>
-                </span>
-              </motion.div>
-            </Link>
           </div>
 
+          {/* Centered Minimal Links */}
           <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-white/60"
+            className="hidden md:flex w-1/3 justify-center items-center gap-10 text-xs font-medium tracking-widest uppercase text-white/50"
           >
-            <Link to="/#vision" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Vision</Link>
-            <Link to="/#story" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Story</Link>
-            <Link to="/collection" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">Collection <span className="text-[10px] uppercase tracking-widest opacity-50 ml-1">(Coming Soon)</span></Link>
-            <Link to="/faq" className="hover:text-[var(--color-aqua-light)] transition-colors duration-300">FAQ</Link>
-            <a href="#contact" className="px-6 py-2.5 rounded-full bg-white/5 hover:bg-[var(--color-aqua)] hover:text-black border border-white/10 hover:border-transparent transition-all duration-500">
-              Contact Us
-            </a>
+            <Link to="/#vision" className="hover:text-[var(--color-aqua-light)] hover:scale-105 transition-all duration-300">Vision</Link>
+            <Link to="/#story" className="hover:text-[var(--color-aqua-light)] hover:scale-105 transition-all duration-300">Story</Link>
+            <Link to="/collection" className="hover:text-[var(--color-aqua-light)] hover:scale-105 transition-all duration-300">Collection</Link>
+            <Link to="/faq" className="hover:text-[var(--color-aqua-light)] hover:scale-105 transition-all duration-300">FAQ</Link>
           </motion.div>
 
-          {/* Mobile Menu Toggle */}
-          <button 
-            className="md:hidden p-2 text-white/70 hover:text-white transition-colors"
-            onClick={() => setIsMobileMenuOpen(true)}
-          >
-            <Menu className="w-6 h-6" />
-          </button>
+          <div className="w-1/3 flex justify-end items-center gap-6">
+            <div className="hidden md:block">
+              <CosmicPortal />
+            </div>
+
+            {/* Mobile Menu Toggle */}
+            <button 
+              className="md:hidden p-2 text-white/70 hover:text-white transition-colors"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
         </div>
       </motion.nav>
 
@@ -296,29 +285,55 @@ function AppContent() {
             </p>
           </div>
 
-          {/* CRO Contact Form */}
-          <form className="space-y-8 mb-32" action="https://formsubmit.co/contact@igrow.now" method="POST">
+          {/* High-Ticket Partnership Application */}
+          <form className="space-y-12 mb-32 bg-white/[0.01] border border-white/5 p-8 md:p-16 rounded-3xl" action="https://formsubmit.co/contact@igrow.now" method="POST">
             {/* FormSubmit Configuration */}
-            <input type="hidden" name="_subject" value="New Project Initiation Request - I Grow" />
+            <input type="hidden" name="_subject" value="New Highly Qualified Partnership Application - I Grow" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_next" value="https://igrow.now/" />
             <input type="hidden" name="_template" value="table" />
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <input type="text" name="Name" placeholder="Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
-              <input type="text" name="Brand Name" placeholder="Brand Name" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
+            <div className="mb-12 border-b border-white/10 pb-8">
+              <h3 className="text-2xl font-serif text-white mb-2">Application for Partnership</h3>
+              <p className="text-white/40 text-sm">Please note: Minimum engagement size begins at $25,000. Do not apply if you are not prepared for extensive market scaling.</p>
             </div>
-            <input type="email" name="Email" placeholder="Email Address" required className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30" />
-            <textarea name="Vision" placeholder="Tell us about your vision." required rows={4} className="w-full bg-transparent border-b border-white/20 pb-4 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/30 resize-none"></textarea>
+
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <label className="block text-[10px] uppercase tracking-widest text-white/40 mb-3">Principal Contact Name</label>
+                <input type="text" name="Name" placeholder="John Doe" required className="w-full bg-transparent border-b border-white/20 pb-3 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/20" />
+              </div>
+              <div>
+                <label className="block text-[10px] uppercase tracking-widest text-white/40 mb-3">Entity / Brand Name</label>
+                <input type="text" name="Brand Name" placeholder="Acme Corp" required className="w-full bg-transparent border-b border-white/20 pb-3 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/20" />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <label className="block text-[10px] uppercase tracking-widest text-white/40 mb-3">Official Communication Email</label>
+                <input type="email" name="Email" placeholder="executive@acme.com" required className="w-full bg-transparent border-b border-white/20 pb-3 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/20" />
+              </div>
+              <div>
+                <label className="block text-[10px] uppercase tracking-widest text-white/40 mb-3">Estimated Marketing Budget</label>
+                <select name="Budget" required defaultValue="" className="w-full bg-black/50 border-b border-white/20 pb-3 h-10 text-white font-light focus:outline-none focus:border-[var(--color-aqua)] transition-colors duration-500 appearance-none">
+                  <option value="" disabled className="text-white/20">Select Tier</option>
+                  <option value="$25k - $50k" className="bg-[#0a0a0a] text-white my-2">$25,000 - $50,000</option>
+                  <option value="$50k - $150k" className="bg-[#0a0a0a] text-white my-2">$50,000 - $150,000</option>
+                  <option value="$150k+" className="bg-[#0a0a0a] text-white my-2">$150,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-[10px] uppercase tracking-widest text-white/40 mb-3">Strategic Objectives & Current Bottlenecks</label>
+              <textarea name="Vision" placeholder="Detail your exact market position and what you are failing to capture..." required rows={5} className="w-full bg-transparent border-b border-white/20 pb-3 text-white font-light focus:outline-none focus:border-white transition-colors duration-500 placeholder:text-white/20 resize-none"></textarea>
+            </div>
             
-            <div className="text-center pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button type="submit" className="px-12 py-5 bg-white text-black font-medium tracking-[0.2em] uppercase text-sm hover:bg-[#E5E4E2] transition-colors duration-700 w-full sm:w-auto">
-                Initiate Project
+            <div className="text-left pt-6 flex flex-col sm:flex-row items-center gap-6">
+              <button type="submit" className="px-12 py-5 bg-white text-black font-medium tracking-[0.2em] uppercase text-sm hover:bg-[#E5E4E2] transition-colors duration-700 w-full sm:w-auto flex items-center justify-center gap-3 group">
+                Submit Dossier <Lock className="w-4 h-4 group-hover:scale-110 transition-transform" />
               </button>
-              <span className="text-white/30 font-light text-sm italic">or</span>
-              <a href="mailto:contact@igrow.now" className="px-12 py-5 border border-white/20 text-white font-medium tracking-[0.2em] uppercase text-sm hover:bg-white/5 transition-colors duration-700 w-full sm:w-auto">
-                Direct Email
-              </a>
             </div>
           </form>
 
@@ -357,14 +372,56 @@ function AppContent() {
             </form>
           </div>
           
-          {/* Trust Signals & Links */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-white/10 text-sm font-light text-white/50">
-            <div className="flex items-center gap-8">
-              <span>&copy; 2026 I Grow. All rights reserved.</span>
-              <div className="flex items-center gap-4">
-                <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
-                <Link to="/terms" className="hover:text-white transition-colors duration-300">Terms & Conditions</Link>
-              </div>
+          {/* Trust Signals & Links upgraded to Enterprise Footer */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pt-16 pb-8 border-t border-white/10">
+            {/* Column 1: Brand */}
+            <div className="col-span-1 md:col-span-1 flex flex-col gap-6">
+              <Link to="/">
+                <div className="text-2xl font-display font-bold tracking-tighter text-white">
+                  I Grow.
+                </div>
+              </Link>
+              <p className="text-white/40 font-light text-sm leading-relaxed">
+                We construct visual realities and engineer market supremacy. The era of traditional production is dead.
+              </p>
+            </div>
+
+            {/* Column 2: Global Nodes */}
+            <div className="flex flex-col gap-4">
+              <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-aqua)] font-mono mb-2">Global Operations</h4>
+              <span className="text-white/60 font-light text-sm hover:text-white transition-colors cursor-pointer flex justify-between items-center group">
+                London <span className="text-white/20 text-xs font-mono group-hover:text-white/40 transition-colors">GMT+1</span>
+              </span>
+              <span className="text-white/60 font-light text-sm hover:text-white transition-colors cursor-pointer flex justify-between items-center group">
+                Dubai <span className="text-white/20 text-xs font-mono group-hover:text-white/40 transition-colors">GST</span>
+              </span>
+              <span className="text-white/60 font-light text-sm hover:text-white transition-colors cursor-pointer flex justify-between items-center group">
+                New York <span className="text-white/20 text-xs font-mono group-hover:text-white/40 transition-colors">EST</span>
+              </span>
+            </div>
+
+            {/* Column 3: Intelligence Divisions */}
+            <div className="flex flex-col gap-4">
+              <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-aqua)] font-mono mb-2">Divisions</h4>
+              <Link to="/#vision" className="text-white/60 font-light text-sm hover:text-white transition-colors">Psychological Operations</Link>
+              <Link to="/#vision" className="text-white/60 font-light text-sm hover:text-white transition-colors">Generative Engineering</Link>
+              <Link to="/collection" className="text-white/60 font-light text-sm hover:text-white transition-colors">Classified Vault</Link>
+              <a href="#creator-form" className="text-white/60 font-light text-sm hover:text-white transition-colors flex items-center gap-2">Creator Networks <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span></a>
+            </div>
+
+            {/* Column 4: Secure Access & Legal */}
+            <div className="flex flex-col gap-4">
+              <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-aqua)] font-mono mb-2">Command Center</h4>
+              <a href="#contact" className="text-white/60 font-light text-sm hover:text-[var(--color-aqua)] transition-colors">Client Portal Login</a>
+              <a href="#contact" className="text-white/60 font-light text-sm hover:text-white transition-colors">Join The Architecture (Careers)</a>
+              <button onClick={() => setIsPrivacyOpen(true)} className="text-left text-white/60 font-light text-sm hover:text-white transition-colors">Privacy & NDA Policy</button>
+              <a href="mailto:contact@igrow.now" className="text-white/60 font-light text-sm hover:text-white transition-colors mt-2">contact@igrow.now</a>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 pb-4 border-t border-white/5 text-xs font-mono text-white/30">
+            <div>
+              <span>&copy; {new Date().getFullYear()} I Grow. All rights reserved.</span>
             </div>
             <div className="flex items-center gap-6">
               <a href="https://www.instagram.com/Igroooow" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
@@ -412,7 +469,7 @@ function AppContent() {
               <h3 className="text-3xl font-serif mb-6 text-white">Privacy Policy</h3>
               <div className="space-y-6 text-white/60 font-light leading-relaxed text-sm md:text-base">
                 <p><strong>Effective Date:</strong> March 31, 2026</p>
-                <p>At I Grow, we take your privacy and the confidentiality of your brand extremely seriously. This Privacy Policy outlines how we collect, use, and protect your information, ensuring full compliance with GDPR and UK data protection laws.</p>
+                <p>At I Grow, we take your privacy and the confidentiality of your brand extremely seriously. This Privacy Policy outlines how we collect, use, and protect your information, ensuring full compliance with global data protection standards.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">1. Information We Collect</h4>
                 <p>We only collect information necessary to evaluate and execute your project, including your name, brand name, website URL, and project vision submitted via our contact form.</p>
                 <h4 className="text-white text-lg font-medium mt-8 mb-4">2. 100% Discretion Guarantee</h4>

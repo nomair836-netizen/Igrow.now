@@ -70,15 +70,15 @@ export default function InteractiveMessage() {
               </span>
             </div>
             <p className="text-white/70 font-light leading-relaxed mb-6 text-sm md:text-base">
-              When you tell a <span className="relative inline-block text-white font-medium z-10 px-1">
-                story
+              When you architect a <span className="relative inline-block text-white font-medium z-10 px-1">
+                narrative
                 <motion.span 
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
                   className="absolute bottom-[10%] left-0 w-full h-[40%] bg-[var(--color-aqua)]/60 -z-10 origin-left -rotate-1 rounded-sm"
                 />
-              </span>, the viewer's brain connects directly with your idea. It bypasses their logical defenses, making story-driven commercials the ultimate way to persuade someone without them ever feeling pitched to.
+              </span>, the viewer's brain surrenders to your frequency. It bypasses logical defense mechanisms, rendering our psych-driven campaigns the ultimate weapon for market domination. They don't just watch. They submit.
             </p>
             <Link 
               to="/invisible-wrap" 

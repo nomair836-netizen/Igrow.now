@@ -8,11 +8,11 @@ const sections = [
     content: (
       <div className="mb-16">
         <h1 className="text-4xl md:text-6xl font-serif font-light tracking-tighter mb-8 text-white">
-          The Invisible Wrap <br className="hidden md:block" />
-          <span className="text-[var(--color-aqua)] italic">& The Vision of I Grow</span>
+          The Invisible Weapon <br className="hidden md:block" />
+          <span className="text-[var(--color-aqua)] italic">& The Ultimatum</span>
         </h1>
         <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed">
-          We don't just produce beautiful commercials. We wrap our work in an invisible layer of science.
+          We do not just produce commercial assets. We encode our output with a highly classified architecture of psychological manipulation.
         </p>
       </div>
     )
@@ -21,7 +21,7 @@ const sections = [
     id: 1,
     content: (
       <p className="text-base md:text-lg text-white/70 font-light leading-relaxed mb-12">
-        Think of it as a transparent cover applied to every frame we edit. Inspired by Edward Bernays, we explicitly use the principles of Consumer Behavior and Neuromarketing. While the audience sees stunning visuals, this invisible wrapper uses hidden details and emotional triggers to speak directly to their subconscious mind.
+        Consider it a digital synthetic frequency mapped onto every frame. We exploit the deepest principles of Consumer Psychology and Neuromarketing. While your audience consumes a stunning visual sequence, this hidden architecture speaks directly to their subconscious, triggering an involuntary command to desire, to trust, and to convert.
       </p>
     )
   },
@@ -29,7 +29,7 @@ const sections = [
     id: 2,
     content: (
       <p className="text-base md:text-lg text-white/70 font-light leading-relaxed mb-12">
-        To wrap your project in this strategy perfectly, absolute <span className="text-white font-medium">Client Privacy</span> is our standard. Keeping your brand's secrets strictly confidential gives us the ideal, secure space to apply these advanced techniques without exposing your edge to competitors.
+        To operate at this frequency, <span className="text-white font-medium">Absolute Discretion</span> is not a courtesy; it is our strictest rule. We protect your competitive advantage by maintaining total operational silence, allowing us to deploy these weapons without exposing your strategy to the market.
       </p>
     )
   },
@@ -37,7 +37,7 @@ const sections = [
     id: 3,
     content: (
       <p className="text-base md:text-lg text-[var(--color-aqua)]/90 font-light leading-relaxed mb-16 border-l-2 border-[var(--color-aqua)]/30 pl-6">
-        Because applying this hidden layer is our natural passion, we include it in our content entirely for free.
+        Because dominating the market is our absolute obsession, this underlying framework is embedded in every single campaign we dictate—standard.
       </p>
     )
   },
@@ -45,7 +45,7 @@ const sections = [
     id: 4,
     content: (
       <h2 className="text-2xl md:text-3xl font-serif font-light tracking-tighter mb-8 text-white">
-        But I Grow is more than just a Growth Partner.
+        But I Grow is more than an agency. It is a paradigm.
       </h2>
     )
   },
@@ -53,7 +53,7 @@ const sections = [
     id: 5,
     content: (
       <p className="text-base md:text-lg text-white/70 font-light leading-relaxed mb-20">
-        We are building something much bigger. We have massive future projects that go far beyond normal video production. Our true goal is to drive real change in the world of visual content and leave a lasting impact and legacy.
+        We are constructing an entirely new baseline for reality. Our ambitions extend far beyond visual dominance. We are here to monopolize the future of engagement, reshape the human response to media, and leave a permanent, undeniable legacy on the global market. Conform, or compete against us and lose.
       </p>
     )
   }

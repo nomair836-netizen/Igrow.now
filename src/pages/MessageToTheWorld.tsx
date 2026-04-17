@@ -88,7 +88,7 @@ export default function MessageToTheWorld() {
                   <span className="font-medium text-[var(--color-aqua)] text-sm">I Grow</span>
                   <span className="text-xs text-[var(--color-aqua)]/70">10:42 AM</span>
                 </div>
-                <h3 className="text-sm font-medium text-white mb-1 truncate">A Message to the World - I Grow 2026</h3>
+                <h3 className="text-sm font-medium text-white mb-1 truncate">A Message to the Market - 2026 Shift</h3>
                 <p className="text-xs text-white/50 line-clamp-2 leading-relaxed">
                   We have been filmmakers for many years. This profession is both our first passion and our primary source of income...
                 </p>
@@ -163,7 +163,7 @@ export default function MessageToTheWorld() {
               <div className="max-w-3xl mx-auto">
                 <div className="mb-10">
                   <h1 className="text-2xl md:text-3xl font-serif font-light text-white mb-6">
-                    A Message to the World - I Grow 2026
+                    A Message to the Market - 2026 Shift
                   </h1>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4">
@@ -184,13 +184,13 @@ export default function MessageToTheWorld() {
                 <div className="prose prose-invert max-w-none" dir="ltr">
                   <div className="text-base md:text-lg text-white/80 font-light leading-relaxed space-y-6 tracking-wide">
                     <p>
-                      We have been filmmakers for many years. This profession is both our first passion and our primary source of income. We deeply understand the impact of the rapid technological shifts on jobs now in 2026.
+                      We spent years in elite cinematic production. It was our lifeblood, but the era of traditional filmmaking is collapsing under the weight of exponential technology.
                     </p>
                     <p>
-                      Today, our decision to evolve beyond traditional production methods is a strategic move, as we recognize this shift will be absolutely essential in the coming years.
+                      Today, our evolution into an absolute Growth Partner is not merely an upgrade; it is an algorithmic necessity to maintain market supremacy and dominate attention.
                     </p>
                     <p>
-                      Yet, despite this evolution, our core philosophy remains: we use AI as an ultimate tool to accelerate production and act as a creative partner, never to replace humans. We have not, and will not, abandon the human element in our workflow. Even our office boy is still here with us.
+                      We weaponize Generative Cinema to construct hyper-realistic realities and scale at devastating speed. We do not replace the human mind; we augment it. We engineer outcomes. Our strategies are ruthless, our execution is flawless, and our loyalty to our partners' dominance is absolute. Conform to the new standard, or disappear.
                     </p>
                   </div>
                 </div>
