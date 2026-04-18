@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A secure vault containing the Telegram delivery link for a client.",
+      "type": "object",
+      "properties": {
+        "clientEmail": {
+          "type": "string",
+          "description": "The Google email of the client who is allowed to view this project."
+        },
+        "title": {
+          "type": "string",
+          "description": "The name of the project (e.g. 'Haute Horlogerie Campaign')"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Architectural Intel", "Generative Forge", "Market Strike", "Delivered"],
+          "description": "Current processing status of the project."
+        },
+        "telegramLink": {
+          "type": "string",
+          "description": "The direct Telegram download link for the completed files."
+        },
+        "createdAt": {
+          "type": "timestamp"
+        },
+        "updatedAt": {
+          "type": "timestamp"
+        }
+      },
+      "required": ["clientEmail", "title", "status", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": {
+        "$ref": "#/entities/Project"
+      },
+      "description": "Stores client projects and secure delivery links."
+    }
+  }
+}

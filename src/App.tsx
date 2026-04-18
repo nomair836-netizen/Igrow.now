@@ -8,6 +8,8 @@ import TheCollection from './pages/TheCollection';
 import MessageToTheWorld from './pages/MessageToTheWorld';
 import InvisibleWrap from './pages/InvisibleWrap';
 import Terms from './pages/Terms';
+import Portal from './pages/Portal';
+import AdminDashboard from './pages/AdminDashboard';
 import CosmicPortal from './components/CosmicPortal';
 
 function ScrollToTop() {
@@ -270,6 +272,8 @@ function AppContent() {
         <Route path="/message" element={<MessageToTheWorld />} />
         <Route path="/invisible-wrap" element={<InvisibleWrap />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/portal" element={<Portal />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
 
       {/* Footer & Contact Section */}
@@ -412,7 +416,7 @@ function AppContent() {
             {/* Column 4: Secure Access & Legal */}
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] uppercase tracking-[0.2em] text-[var(--color-aqua)] font-mono mb-2">Command Center</h4>
-              <a href="#contact" className="text-white/60 font-light text-sm hover:text-[var(--color-aqua)] transition-colors">Client Portal Login</a>
+              <Link to="/portal" className="text-white/60 font-light text-sm hover:text-[var(--color-aqua)] transition-colors">Client Portal Login</Link>
               <a href="#contact" className="text-white/60 font-light text-sm hover:text-white transition-colors">Join The Architecture (Careers)</a>
               <button onClick={() => setIsPrivacyOpen(true)} className="text-left text-white/60 font-light text-sm hover:text-white transition-colors">Privacy & NDA Policy</button>
               <a href="mailto:contact@igrow.now" className="text-white/60 font-light text-sm hover:text-white transition-colors mt-2">contact@igrow.now</a>
