@@ -80,11 +80,17 @@ export default function AdminDashboard() {
     return (
       <div className="min-h-screen bg-black pt-32 px-6 flex flex-col items-center">
         <ShieldAlert className="w-16 h-16 text-red-500 mb-6" />
-        <h1 className="text-white text-2xl font-mono">RESTRICTED AREA</h1>
+        <h1 className="text-white text-2xl font-mono text-center">RESTRICTED AREA</h1>
         {user ? (
-          <button onClick={logout} className="mt-8 text-white/50 border border-white/20 px-6 py-2">Logout</button>
+          <>
+            <p className="text-white/40 mt-4 text-sm text-center">You are logged in as <span className="text-white">{user.email}</span>, which does not have Admin clearance.</p>
+            <p className="text-[var(--color-aqua)] mt-2 text-sm text-center">You must log in explicitly with nomair836@gmail.com</p>
+            <button onClick={logout} className="mt-8 text-white/50 border border-white/20 px-8 py-3 hover:bg-white hover:text-black transition-colors">Switch Account / Logout</button>
+          </>
         ) : (
-          <button onClick={loginWithGoogle} className="mt-8 text-white/50 border border-white/20 px-6 py-2">Admin Login</button>
+          <button onClick={loginWithGoogle} className="mt-8 bg-[var(--color-aqua)] text-black px-8 py-3 font-bold uppercase tracking-widest hover:bg-white transition-colors">
+            Authorize via Google
+          </button>
         )}
       </div>
     );

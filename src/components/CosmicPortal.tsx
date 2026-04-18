@@ -16,44 +16,48 @@ export default function CosmicPortal() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-12 h-12 flex items-center justify-center">
       {/* Motion Shutter Trails (Aqua Shade left behind) */}
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={`trail-${i}`}
-          initial={{ x: -600, y: 600, scale: 4, opacity: 0.8, filter: 'blur(20px)' }}
-          animate={{ x: 0, y: 0, scale: 1, opacity: 0, filter: 'blur(30px)' }}
+          initial={{ y: '50vh', x: '-20vw', scale: 2, opacity: 0.8, filter: 'blur(10px)' }}
+          animate={{ y: 0, x: 0, scale: 1, opacity: 0, filter: 'blur(15px)' }}
           transition={{ 
             duration: 1.5, 
             ease: [0.16, 1, 0.3, 1], 
-            delay: 0.2 + (i * 0.08) // Staggered delays create the trail/shutter effect
+            delay: 0.1 + (i * 0.05) 
           }}
-          className="absolute inset-0 rounded-full bg-[var(--color-aqua)] z-[-1] pointer-events-none mix-blend-screen"
+          className="absolute w-12 h-12 rounded-full bg-[var(--color-aqua)] pointer-events-none mix-blend-screen"
         />
       ))}
 
-      {/* Main Portal Button with Fly-in Animation */}
-      <MotionLink 
-        to="/message"
-        initial={{ x: -600, y: 600, scale: 4, filter: 'blur(20px)', opacity: 0 }}
-        animate={{ x: 0, y: 0, scale: 1, filter: 'blur(0px)', opacity: 1 }}
+      {/* Main Portal Button with Fly-in Animation Wrapper */}
+      <motion.div
+        initial={{ y: '50vh', x: '-20vw', scale: 2, filter: 'blur(15px)', opacity: 0 }}
+        animate={{ y: 0, x: 0, scale: 1, filter: 'blur(0px)', opacity: 1 }}
         transition={{ 
           duration: 1.5, 
-          ease: [0.16, 1, 0.3, 1], // Aggressive cinematic ease
-          delay: 0.2
+          ease: [0.16, 1, 0.3, 1], 
+          delay: 0.1
         }}
-        className="relative flex items-center justify-center rounded-full overflow-hidden z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-        style={{ 
-          width: isHovered ? '180px' : '48px', 
-          height: '48px',
-          boxShadow: isHovered ? '0 0 30px rgba(0,229,255,0.4), inset 0 0 20px rgba(0,0,0,0.8)' : '0 4px 20px rgba(0,0,0,0.3)',
-          border: isHovered ? '1px solid rgba(0,229,255,0.3)' : '1px solid rgba(255,255,255,0.1)',
-          backgroundColor: isHovered ? '#000' : 'rgba(255,255,255,0.03)',
-          backdropFilter: 'blur(10px)'
-        }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        className="absolute right-0 h-12 flex items-center justify-end z-[60]"
       >
+        <MotionLink 
+          to="/message"
+          animate={{ width: isHovered ? 180 : 48 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="relative flex items-center justify-center rounded-full overflow-hidden"
+          style={{
+            height: '48px',
+            boxShadow: isHovered ? '0 0 30px rgba(0,229,255,0.4), inset 0 0 20px rgba(0,0,0,0.8)' : '0 4px 20px rgba(0,0,0,0.3)',
+            border: isHovered ? '1px solid rgba(0,229,255,0.3)' : '1px solid rgba(255,255,255,0.1)',
+            backgroundColor: isHovered ? '#000' : 'rgba(255,255,255,0.03)',
+            backdropFilter: 'blur(10px)'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
         {/* Default State: The Mysterious Orb */}
         <motion.div
           animate={{ opacity: isHovered ? 0 : 1, scale: isHovered ? 0.5 : 1 }}
@@ -116,7 +120,8 @@ export default function CosmicPortal() {
             </motion.div>
           )}
         </AnimatePresence>
-      </MotionLink>
+        </MotionLink>
+      </motion.div>
     </div>
   );
 }

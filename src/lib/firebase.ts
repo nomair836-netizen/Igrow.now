@@ -17,9 +17,12 @@ export const googleProvider = new GoogleAuthProvider();
 
 export const loginWithGoogle = async () => {
   try {
-    await signInWithPopup(auth, googleProvider);
-  } catch (error) {
+    const result = await signInWithPopup(auth, googleProvider);
+    return result;
+  } catch (error: any) {
     console.error("Google login failed", error);
+    alert(`Login failed: ${error.message} (If popups are disabled, please open the website in a new tab)`);
+    throw error;
   }
 };
 
